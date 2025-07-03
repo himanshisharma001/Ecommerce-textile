@@ -1,0 +1,507 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ==========================Bootstrap================================== -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- ==========================Icons============================================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- ========================Custom CSS============================================ -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/product.css">
+  <title>Product Page</title>
+</head>
+
+<body>
+  <!-- ============================Header=================================== -->
+  <header class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html"><img src="./assets/images/header-logo.png" alt="logo" /></a>
+    </div>
+
+    <!-- MOBILE: Menu + Icons -->
+    <div class="mobile-icons">
+       <a class="open-offcanvas"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
+      <a href="#"><span class="nav-apply-btn"><i class="bi bi-person-fill"></i></span></a>
+      <i class="bi bi-grid-fill open-menu"></i>
+    </div>
+
+    <div class="background"></div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-link-container">
+      <i class="bi bi-x-circle close-menu"></i>
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="index.html">Home</a></li>
+
+        <!-- Desktop Mega Menu -->
+        <li class="nav-link-item has-mega desktop-only">
+          <a href="#">Fabric<i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-column titles">
+              <ul>
+                <li data-id="fabric" class="active">Fabric</li>
+                <li data-id="dress">Dress</li>
+                <li data-id="attire">Cultural Attire</li>
+              </ul>
+            </div>
+            <div class="mega-column content">
+              <div class="mega-content active" id="fabric">
+                <a href="#">Cotton</a>
+                <a href="#">Silk</a>
+                <a href="#">Linen</a>
+                
+              </div>
+              <div class="mega-content" id="dress">
+                <a href="#">Casual</a>
+                <a href="#">Party Wear</a>
+                <a href="#">Formal</a>
+              </div>
+              <div class="mega-content" id="attire">
+                <a href="#">Saree</a>
+                <a href="#">Kimono</a>
+                <a href="#">Dashiki</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Mega Menu -->
+        <li class="nav-link-item mobile-dropdown mobile-only">
+          <div class="dropdown-title">Fabric<i class="bi bi-chevron-down"></i></div>
+          <ul class="dropdown-content">
+            <li><a href="#">Cotton</a></li>
+            <li><a href="#">Silk</a></li>
+            <li><a href="#">Linen</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Party Wear</a></li>
+            <li><a href="#">Formal</a></li>
+            <li><a href="#">Saree</a></li>
+            <li><a href="#">Kimono</a></li>
+            <li><a href="#">Dashiki</a></li>
+          </ul>
+        </li>
+
+        <!-- Desktop Mega Menu -->
+        <li class="nav-link-item has-mega desktop-only">
+          <a href="#">Dress<i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-column titles">
+              <ul>
+                <li data-id="dress1" class="active">Dress</li>
+                <li data-id="dress2">Dress</li>
+                <li data-id="dress3">Cultural Attire</li>
+              </ul>
+            </div>
+            <div class="mega-column content">
+              <div class="mega-content active" id="dress1">
+                <a href="#">Cotton</a>
+                <a href="#">Silk</a>
+                <a href="#">Linen</a>
+              </div>
+              <div class="mega-content" id="dress2">
+                <a href="#">Casual</a>
+                <a href="#">Party Wear</a>
+                <a href="#">Formal</a>
+              </div>
+              <div class="mega-content" id="dress3">
+                <a href="#">Saree</a>
+                <a href="#">Kimono</a>
+                <a href="#">Dashiki</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Mega Menu -->
+        <li class="nav-link-item mobile-dropdown mobile-only">
+          <div class="dropdown-title">Dress<i class="bi bi-chevron-down"></i></div>
+          <ul class="dropdown-content">
+            <li><a href="#">Cotton</a></li>
+            <li><a href="#">Silk</a></li>
+            <li><a href="#">Linen</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Party Wear</a></li>
+            <li><a href="#">Formal</a></li>
+            <li><a href="#">Saree</a></li>
+            <li><a href="#">Kimono</a></li>
+            <li><a href="#">Dashiki</a></li>
+          </ul>
+        </li>
+
+        <!-- Desktop Mega Menu -->
+        <li class="nav-link-item has-mega desktop-only">
+          <a href="#">Cultural Attire<i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-column titles">
+              <ul>
+                <li data-id="attire1" class="active">Fabric</li>
+                <li data-id="attire2">Dress</li>
+                <li data-id="attire3">Cultural Attire</li>
+              </ul>
+            </div>
+            <div class="mega-column content">
+              <div class="mega-content active" id="attire1">
+                <a href="#">Cotton</a>
+                <a href="#">Silk</a>
+                <a href="#">Linen</a>
+              </div>
+              <div class="mega-content" id="attire2">
+                <a href="#">Casual</a>
+                <a href="#">Party Wear</a>
+                <a href="#">Formal</a>
+              </div>
+              <div class="mega-content" id="attire3">
+                <a href="#">Saree</a>
+                <a href="#">Kimono</a>
+                <a href="#">Dashiki</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Mega Menu -->
+        <li class="nav-link-item mobile-dropdown mobile-only">
+          <div class="dropdown-title">Cultural Attire<i class="bi bi-chevron-down"></i></div>
+          <ul class="dropdown-content">
+            <li><a href="#">Cotton</a></li>
+            <li><a href="#">Silk</a></li>
+            <li><a href="#">Linen</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Party Wear</a></li>
+            <li><a href="#">Formal</a></li>
+            <li><a href="#">Saree</a></li>
+            <li><a href="#">Kimono</a></li>
+            <li><a href="#">Dashiki</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Desktop Right Icons -->
+    <ul class="nav-links">
+      <li class="nav-link-item desktop-apply-btn">
+       <a class="open-offcanvas"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
+      </li>
+      <li class="nav-link-item desktop-apply-btn">
+        <a href="#"><span class="nav-apply-btn"><i class="bi bi-person-fill"></i></span></a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- ================================Products======================================== -->
+   <section class="product-page-container">
+    <div><img src="./assets/images/product-bg-img.png" alt="image" class="mainProduct-relative-image"></div>
+    <div class="container">
+           <div class="banner-area-titles">
+      <img src="./assets/images/banner-title-image.png" alt="icon" loading="lazy">
+      <h1>Weaving Tradition, Crafting Style</h1>
+      <p> Discover the finest handcrafted textiles that blend heritage and modern elegance.</p>
+    </div>
+
+    <div class="product-new-arrival-heading mb-2">
+      <h2>New Arrival Fabric</h2>
+      <div class="d-flex align-items-center">
+        <span>Sorted BY</span>
+       <div class="dropdown">
+  <button class="product-sort-by-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+   Low to High
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">High to Low</a></li>
+    <li><a class="dropdown-item" href="#">Under Rs.500</a></li>
+    <li><a class="dropdown-item" href="#">Under Rs.1000</a></li>
+  </ul>
+</div>
+      </div>
+    </div>
+
+    <div class="product-filter-tabs-show mb-2 mt-2">
+      <div class="product-filter">Category</div>
+      <div class="product-filter">Range</div>
+       <div class="product-filter">Color</div>
+        <div class="product-filter">Offer</div>
+         <div class="product-filter">Category</div>
+      <div class="product-filter">Range</div>
+       <div class="product-filter">Color</div>
+        <div class="product-filter">Offer</div>
+    </div>
+    <div class="row product-gap-space">
+        <div class="col-md-4 col-6">
+    <a href="product-details.html">
+      <div class="category-container">
+                <div class="category-main-container-show">
+               <img src="https://cdn.shopify.com/s/files/1/0560/2227/0115/files/charumathi-500x500.jpg" alt="banner-image" loading="lazy">
+                <div class="off-icons-show">
+                 Sale<br>
+                  10% OFF
+                </div>
+                <div class="view-share-menu">
+                 <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
+                 <a href="product-details.html"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
+                </div>
+                 <a class="open-offcanvas">
+                  <div class="product-title">
+                  Add to Cart
+                </div></a>
+                </div>
+             
+
+                <div class="category-heading-title-show">
+                  <h3>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h3>
+                  <p>Rs. 1750.00  <span>Rs. 1950.00</span></p>
+                </div>
+              </div>
+             </a>  
+        </div>
+
+                <div class="col-md-4 col-6">
+                   <a href="product-details.html">
+          <div class="category-container">
+                <div class="category-main-container-show">
+               <img src="https://www.nihalfashions.com/media/catalog/product/cache/65345e2509ec259d7076b8990c2edf06/f/a/faux-georgette-green-salwar-kameez-nws-6906.jpg" alt="banner-image" loading="lazy">
+                <div class="off-icons-show">
+                 Sale<br>
+                  10% OFF
+                </div>
+                <div class="view-share-menu">
+                 <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
+                 <a href="product-details.html"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
+                </div>
+                 <a class="open-offcanvas">
+                  <div class="product-title">
+                  Add to Cart
+                </div></a>
+                </div>
+             
+
+                <div class="category-heading-title-show">
+                  <h3>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h3>
+                  <p>Rs. 1750.00  <span>Rs. 1950.00</span></p>
+                </div>
+              </div>
+              </a>
+        </div>
+
+                <div class="col-md-4 col-6">
+                   <a href="product-details.html">
+     <div class="category-container">
+                <div class="category-main-container-show">
+               <img src="https://www.thegrandtrunkus.com/cdn/shop/products/RS017-20TA1-min.png?v=1679056223" alt="banner-image" loading="lazy">
+                <div class="off-icons-show">
+                 Sale<br>
+                  10% OFF
+                </div>
+                <div class="view-share-menu">
+                 <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
+                  <a href="product-details.html"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
+                </div>
+                 <a class="open-offcanvas">
+                  <div class="product-title">
+                  Add to Cart
+                </div></a>
+                </div>
+             
+
+                <div class="category-heading-title-show">
+                  <h3>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h3>
+                  <p>Rs. 1750.00  <span>Rs. 1950.00</span></p>
+                </div>
+              </div>
+              </a>
+        </div>
+
+                   <div class="col-md-4 col-6">
+                     <a href="product-details.html">
+     <div class="category-container">
+                <div class="category-main-container-show">
+               <img src="https://cdn.rajwadi.com/image/cache/data-2024/graceful-beige-heavy-embroidered-groom-sherwani-set-59169-800x1100.jpg" alt="banner-image" loading="lazy">
+                <div class="off-icons-show">
+                 Sale<br>
+                  10% OFF
+                </div>
+                <div class="view-share-menu">
+                 <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
+                 <a href="product-details.html"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
+                </div>
+                 <a class="open-offcanvas">
+                  <div class="product-title">
+                  Add to Cart
+                </div></a>
+                </div>
+             
+
+                <div class="category-heading-title-show">
+                  <h3>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h3>
+                  <p>Rs. 1750.00  <span>Rs. 1950.00</span></p>
+                </div>
+              </div>
+              </a>
+        </div>
+
+         <div class="col-md-4 col-6">
+           <a href="product-details.html">
+     <div class="category-container">
+                <div class="category-main-container-show">
+               <img src="https://assets.lummi.ai/assets/QmatRLTjUfwK3Aag7AfgF8dfBRHg5PBr3F3WqCDjNwGKSP?auto=format&w=640" alt="banner-image" loading="lazy">
+                <div class="off-icons-show">
+                 Sale<br>
+                  10% OFF
+                </div>
+                <div class="view-share-menu">
+                 <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
+                  <a href="product-details.html"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
+                </div>
+                 <a class="open-offcanvas">
+                  <div class="product-title">
+                  Add to Cart
+                </div></a>
+                </div>
+             
+
+                <div class="category-heading-title-show">
+                  <h3>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h3>
+                  <p>Rs. 1750.00  <span>Rs. 1950.00</span></p>
+                </div>
+              </div>
+              </a>
+        </div>
+
+
+         <div class="col-md-4 col-6">
+           <a href="product-details.html">
+     <div class="category-container">
+                <div class="category-main-container-show">
+               <img src="https://5.imimg.com/data5/CE/IY/MY-62559418/dhoti-kurta-for-men.jpg" alt="banner-image" loading="lazy">
+                <div class="off-icons-show">
+                 Sale<br>
+                  10% OFF
+                </div>
+                <div class="view-share-menu">
+                 <a href="#"><div class="view-cart-icons"><i class="bi bi-share-fill"></i></div></a>  
+                 <a href="product-details.html"><div class="view-cart-icons mt-1"><i class="bi bi-eye-fill"></i></div></a> 
+                </div>
+                 <a class="open-offcanvas">
+                  <div class="product-title">
+                  Add to Cart
+                </div></a>
+                </div>
+             
+
+                <div class="category-heading-title-show">
+                  <h3>Pure silk Handloom Banarasi brocade fabric 65 CM CUT</h3>
+                  <p>Rs. 1750.00  <span>Rs. 1950.00</span></p>
+                </div>
+              </div>
+              </a>
+        </div>
+
+    </div>
+
+
+    <!-- ----------------Pagination--------------------- -->
+<div class="custom-pagination">
+  <button class="main-page-btn"><i class="bi bi-arrow-left"></i>Previous</button>
+
+  <div class="page-links">
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <span class="dots">...</span>
+    <button class="page-btn">50</button>
+  </div>
+
+  <button class="main-page-btn">Next<i class="bi bi-arrow-right"></i></button>
+</div>
+    </div>
+   </section>
+  
+  <!-- ==============================Footer================================================== -->
+      <footer class="footer-background">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="text-center"><img src="./assets/images/main-footer-logo.png" alt="logo" class="main-footer-logo-img"></div>
+             <form action="" style="position: relative;">
+              <input type="text" class="footer-input-box" placeholder="Enter your email">
+               <i class="bi bi-send-fill footer-send-btn"></i>
+             </form>
+            </div>
+            <div class="col-md-2 col-6">
+              <h5 class="footer-title">Fabric</h5>
+              <ul class="footer-main-list">
+                <li><a href="#">Cotton Fabric</a></li>
+                 <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+                  <li><a href="#">Cotton Fabric</a></li>
+                   <li><a href="#">Cotton Fabric</a></li>
+              </ul>
+            </div>
+
+             <div class="col-md-2 col-6">
+              <h5 class="footer-title">Dress</h5>
+              <ul class="footer-main-list">
+                <li><a href="#">Cotton Fabric</a></li>
+                <li><a href="#">Cotton Fabric</a></li>
+                 <li><a href="#">Cotton Fabric</a></li>
+                  <li><a href="#">Cotton Fabric</a></li>
+                   <li><a href="#">Cotton Fabric</a></li>
+              </ul>
+            </div>
+
+             <div class="col-md-3 col-6">
+              <h5 class="footer-title">Cultural Attire</h5>
+              <ul class="footer-main-list">
+                <li><a href="#">Cotton Fabric</a></li>
+                <li><a href="#">Cotton Fabric</a></li>
+                 <li><a href="#">Cotton Fabric</a></li>
+                  <li><a href="#">Cotton Fabric</a></li>
+                   <li><a href="#">Cotton Fabric</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-1 col-6 mt-3">
+             <a href="#"><div class="social-icons-show"><i class="bi bi-facebook"></i></div></a> 
+             <a href="#"><div class="social-icons-show"><i class="bi bi-instagram"></i></div></a>
+             <a href="#"><div class="social-icons-show"><i class="bi bi-youtube"></i></div></a>
+             <a href="#"><div class="social-icons-show"><i class="bi bi-pinterest"></i></div></a>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+       <div class="text-center copy-right-text"><small>@Copyright 2025. All rights reserved by <a href="#">Rati Care</a></small></div> 
+      </footer>
+
+        <!-- ===========================Offcanvas======================================== -->
+  <div id="offcanvasContainer"></div>
+  
+ <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  fetch('cart.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('offcanvasContainer').innerHTML = html;
+
+      const offcanvasElement = document.getElementById('dynamicOffcanvas');
+      // const offcanvasBody = document.getElementById('offcanvasContent');
+      const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+      // Attach listener to ALL trigger buttons on the page
+      document.querySelectorAll('.open-offcanvas').forEach(button => {
+        button.addEventListener('click', () => {
+          offcanvas.show();
+        });
+      });
+    });
+});
+</script>
+</body>
+</html>

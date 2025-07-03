@@ -1,0 +1,395 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==========================Bootstrap================================== -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- ==========================Icons============================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- ========================Custom CSS============================================ -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <title>Blog Page</title>
+  </head>
+
+  <body>
+    <!-- ============================Header=================================== -->
+ <header class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html"><img src="./assets/images/header-logo.png" alt="logo" /></a>
+    </div>
+
+    <!-- MOBILE: Menu + Icons -->
+    <div class="mobile-icons">
+      <a class="open-offcanvas"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
+      <a href="#"><span class="nav-apply-btn"><i class="bi bi-person-fill"></i></span></a>
+      <i class="bi bi-grid-fill open-menu"></i>
+    </div>
+
+    <div class="background"></div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-link-container">
+      <i class="bi bi-x-circle close-menu"></i>
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="index.html">Home</a></li>
+
+        <!-- Desktop Mega Menu -->
+        <li class="nav-link-item has-mega desktop-only">
+          <a href="#">Fabric<i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-column titles">
+              <ul>
+                <li data-id="fabric" class="active">Fabric</li>
+                <li data-id="dress">Dress</li>
+                <li data-id="attire">Cultural Attire</li>
+              </ul>
+            </div>
+            <div class="mega-column content">
+              <div class="mega-content active" id="fabric">
+                <a href="#">Cotton</a>
+                <a href="#">Silk</a>
+                <a href="#">Linen</a>
+                
+              </div>
+              <div class="mega-content" id="dress">
+                <a href="#">Casual</a>
+                <a href="#">Party Wear</a>
+                <a href="#">Formal</a>
+              </div>
+              <div class="mega-content" id="attire">
+                <a href="#">Saree</a>
+                <a href="#">Kimono</a>
+                <a href="#">Dashiki</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Mega Menu -->
+        <li class="nav-link-item mobile-dropdown mobile-only">
+          <div class="dropdown-title">Fabric<i class="bi bi-chevron-down"></i></div>
+          <ul class="dropdown-content">
+            <li><a href="#">Cotton</a></li>
+            <li><a href="#">Silk</a></li>
+            <li><a href="#">Linen</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Party Wear</a></li>
+            <li><a href="#">Formal</a></li>
+            <li><a href="#">Saree</a></li>
+            <li><a href="#">Kimono</a></li>
+            <li><a href="#">Dashiki</a></li>
+          </ul>
+        </li>
+
+        <!-- Desktop Mega Menu -->
+        <li class="nav-link-item has-mega desktop-only">
+          <a href="#">Dress<i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-column titles">
+              <ul>
+                <li data-id="dress1" class="active">Dress</li>
+                <li data-id="dress2">Dress</li>
+                <li data-id="dress3">Cultural Attire</li>
+              </ul>
+            </div>
+            <div class="mega-column content">
+              <div class="mega-content active" id="dress1">
+                <a href="#">Cotton</a>
+                <a href="#">Silk</a>
+                <a href="#">Linen</a>
+              </div>
+              <div class="mega-content" id="dress2">
+                <a href="#">Casual</a>
+                <a href="#">Party Wear</a>
+                <a href="#">Formal</a>
+              </div>
+              <div class="mega-content" id="dress3">
+                <a href="#">Saree</a>
+                <a href="#">Kimono</a>
+                <a href="#">Dashiki</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Mega Menu -->
+        <li class="nav-link-item mobile-dropdown mobile-only">
+          <div class="dropdown-title">Dress<i class="bi bi-chevron-down"></i></div>
+          <ul class="dropdown-content">
+            <li><a href="#">Cotton</a></li>
+            <li><a href="#">Silk</a></li>
+            <li><a href="#">Linen</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Party Wear</a></li>
+            <li><a href="#">Formal</a></li>
+            <li><a href="#">Saree</a></li>
+            <li><a href="#">Kimono</a></li>
+            <li><a href="#">Dashiki</a></li>
+          </ul>
+        </li>
+
+        <!-- Desktop Mega Menu -->
+        <li class="nav-link-item has-mega desktop-only">
+          <a href="#">Cultural Attire<i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="mega-column titles">
+              <ul>
+                <li data-id="attire1" class="active">Fabric</li>
+                <li data-id="attire2">Dress</li>
+                <li data-id="attire3">Cultural Attire</li>
+              </ul>
+            </div>
+            <div class="mega-column content">
+              <div class="mega-content active" id="attire1">
+                <a href="#">Cotton</a>
+                <a href="#">Silk</a>
+                <a href="#">Linen</a>
+              </div>
+              <div class="mega-content" id="attire2">
+                <a href="#">Casual</a>
+                <a href="#">Party Wear</a>
+                <a href="#">Formal</a>
+              </div>
+              <div class="mega-content" id="attire3">
+                <a href="#">Saree</a>
+                <a href="#">Kimono</a>
+                <a href="#">Dashiki</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mobile Accordion Mega Menu -->
+        <li class="nav-link-item mobile-dropdown mobile-only">
+          <div class="dropdown-title">Cultural Attire<i class="bi bi-chevron-down"></i></div>
+          <ul class="dropdown-content">
+            <li><a href="#">Cotton</a></li>
+            <li><a href="#">Silk</a></li>
+            <li><a href="#">Linen</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Party Wear</a></li>
+            <li><a href="#">Formal</a></li>
+            <li><a href="#">Saree</a></li>
+            <li><a href="#">Kimono</a></li>
+            <li><a href="#">Dashiki</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Desktop Right Icons -->
+    <ul class="nav-links">
+      <li class="nav-link-item desktop-apply-btn">
+        <a class="open-offcanvas"><span class="nav-apply-btn"><i class="bi bi-cart4"></i></span></a>
+      </li>
+      <li class="nav-link-item desktop-apply-btn">
+        <a href="#"><span class="nav-apply-btn"><i class="bi bi-person-fill"></i></span></a>
+      </li>
+    </ul>
+  </header>
+
+    <!-- =======================Blogs=========================================== -->
+     <section>
+      <div class="container-fluid">
+        <div class="product-page-link-show" style="padding-top: 10px;">Home / Blogs</div>
+             <div class="banner-area-titles" style="margin-top: -30px;">
+      <img src="./assets/images/banner-title-image.png" alt="icon" loading="lazy">
+      <h1>Our Blogs</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, porro!</p>
+    </div>
+        <div class="row">
+          <div class="col-md-4 mt-4">
+            <a href="blog-details.html" class="text-decoration-none">
+              <div class="main-blogs-container">
+                <img src="https://www.hostinger.com/my/tutorials/wp-content/uploads/sites/45/2022/03/what-is-a-blog-1.webp" alt="Blog-image">
+               <div class="share-post-show">
+                 <div class="read-post-text">June 7 | 10 min read</div>
+                  <a href="#"><i class="fa-solid fa-share"></i></a>
+               </div>
+               
+                <a href="blog-details.html" class="text-decoration-none"><h1>Top 8 eCommerce personalization examples to boost sales</h1></a>
+              </div>
+            </a> 
+          </div>
+                <div class="col-md-4 mt-4">
+                  <a href="blog-details.html" class="text-decoration-none">
+              <div class="main-blogs-container">
+                <img src="https://revolutionfabrics.com/cdn/shop/articles/Blog_Cover_Photo_Template_22_1200x750.jpg?v=1694786803" alt="Blog-image">
+               <div class="share-post-show">
+                 <div class="read-post-text">June 7 | 10 min read</div>
+                  <a href="#"><i class="fa-solid fa-share"></i></a>
+               </div>
+               
+                <a href="blog-details.html" class="text-decoration-none"><h1>Top 8 eCommerce personalization examples to boost sales</h1></a>
+              </div>
+            </a> 
+
+          </div>
+                <div class="col-md-4 mt-4">
+                  <a href="blog-details.html" class="text-decoration-none">
+              <div class="main-blogs-container">
+                <img src="https://img.theloom.in/blog/wp-content/uploads/2023/03/272-2-e1678785542142.png" alt="Blog-image">
+               <div class="share-post-show">
+                 <div class="read-post-text">June 7 | 10 min read</div>
+                  <a href="#"><i class="fa-solid fa-share"></i></a>
+               </div>
+               
+                <a href="blog-details.html" class="text-decoration-none"><h1>Top 8 eCommerce personalization examples to boost sales</h1></a>
+              </div>
+            </a> 
+          </div>
+                <div class="col-md-4 mt-4">
+                  <a href="blog-details.html" class="text-decoration-none">
+              <div class="main-blogs-container">
+                <img src="https://www.manyavar.com/dw/image/v2/BJZV_PRD/on/demandware.static/-/Library-Sites-ManyavarSharedLibrary/default/dwb4de314b/5%20Sherwani%20Styles%20for%20a%20Grand%20Marriage%20Ceremony_Blog%201.jpg" alt="Blog-image">
+               <div class="share-post-show">
+                 <div class="read-post-text">June 7 | 10 min read</div>
+                  <a href="#"><i class="fa-solid fa-share"></i></a>
+               </div>
+               
+                <a href="blog-details.html" class="text-decoration-none"><h1>Top 8 eCommerce personalization examples to boost sales</h1></a>
+              </div>
+            </a> 
+
+          </div>
+                <div class="col-md-4 mt-4">
+                  <a href="blog-details.html" class="text-decoration-none">
+              <div class="main-blogs-container">
+                <img src="https://medias.utsavfashion.com/blog/wp-content/uploads/2023/12/22nd-dec-Blog.jpg" alt="Blog-image">
+               <div class="share-post-show">
+                 <div class="read-post-text">June 7 | 10 min read</div>
+                  <a href="#"><i class="fa-solid fa-share"></i></a>
+               </div>
+               
+                <a href="blog-details.html" class="text-decoration-none"><h1>Top 8 eCommerce personalization examples to boost sales</h1></a>
+              </div>
+            </a> 
+          </div>
+                <div class="col-md-4 mt-4">
+                  <a href="blog-details.html" class="text-decoration-none">
+              <div class="main-blogs-container">
+                <img src="https://manyavar.scene7.com/is/image/manyavar/SOSK734_316-Dark+Green.6605_12-01-2024-15-45:650x900?&dpr=on,2" alt="Blog-image">
+               <div class="share-post-show">
+                 <div class="read-post-text">June 7 | 10 min read</div>
+                  <a href="#"><i class="fa-solid fa-share"></i></a>
+               </div>
+               
+                <a href="blog-details.html" class="text-decoration-none"><h1>Top 8 eCommerce personalization examples to boost sales</h1></a>
+              </div>
+            </a> 
+          </div>
+        </div>
+            <!-- ----------------Pagination--------------------- -->
+<div class="custom-pagination">
+  <button class="main-page-btn"><i class="bi bi-arrow-left"></i>Previous</button>
+
+  <div class="page-links">
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <span class="dots">...</span>
+    <button class="page-btn">50</button>
+  </div>
+
+  <button class="main-page-btn">Next<i class="bi bi-arrow-right"></i></button>
+</div>
+      </div>
+     </section>
+      <!-- ==============================Footer================================================== -->
+    <footer class="footer-background">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="text-center"><img src="./assets/images/main-footer-logo.png" alt="logo" class="main-footer-logo-img"></div>
+            <form action="" style="position: relative;">
+              <input type="text" class="footer-input-box" placeholder="Enter your email">
+              <i class="bi bi-send-fill footer-send-btn"></i>
+            </form>
+          </div>
+          <div class="col-md-2 col-6">
+            <h5 class="footer-title">Fabric</h5>
+            <ul class="footer-main-list">
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <h5 class="footer-title">Dress</h5>
+            <ul class="footer-main-list">
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h5 class="footer-title">Cultural Attire</h5>
+            <ul class="footer-main-list">
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+              <li><a href="#">Cotton Fabric</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-1 col-6 mt-3">
+            <a href="#">
+              <div class="social-icons-show"><i class="bi bi-facebook"></i></div>
+            </a>
+            <a href="#">
+              <div class="social-icons-show"><i class="bi bi-instagram"></i></div>
+            </a>
+            <a href="#">
+              <div class="social-icons-show"><i class="bi bi-youtube"></i></div>
+            </a>
+            <a href="#">
+              <div class="social-icons-show"><i class="bi bi-pinterest"></i></div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <div class="text-center copy-right-text"><small>@Copyright 2025. All rights reserved by <a href="#">Rati Care</a></small></div>
+    </footer>
+
+      <!-- ===========================Offcanvas======================================== -->
+  <div id="offcanvasContainer"></div>
+  
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+  fetch('cart.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('offcanvasContainer').innerHTML = html;
+
+      const offcanvasElement = document.getElementById('dynamicOffcanvas');
+      // const offcanvasBody = document.getElementById('offcanvasContent');
+      const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+      // Attach listener to ALL trigger buttons on the page
+      document.querySelectorAll('.open-offcanvas').forEach(button => {
+        button.addEventListener('click', () => {
+          offcanvas.show();
+        });
+      });
+    });
+});
+</script>
+  </body>
+  </html>
